@@ -1,18 +1,20 @@
-import { Link } from "react-router-dom";
 import Layout from "../../Layout";
+import Build from "./build";
+import Finger from "./finger";
+import Producs from "./producs";
+import Technalogik from "./technalogik";
 
-function Home() {
+function HomeRoute() {
   return (
     <Layout>
-      <Link
-        className="bg-indigo-700 px-6 py-2 rounded text-xl text-white"
-        to={"/"}
-      >
-        +
-      </Link>
-      <div className=" bg-red-700 text-red-500 text-[32px]">Abbos</div>
+      <div className="font-body bg-[rgb(243,242,242)]">
+        <Finger />
+        <Technalogik />
+        <Build />
+        <Producs />
+      </div>
     </Layout>
   );
 }
 
-export default Home;
+export default HomeRoute;
